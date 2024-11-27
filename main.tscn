@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4hhnul24dhv3"]
+
+[ext_resource type="Texture2D" uid="uid://c11paj4g1xop6" path="res://bg/parallax-background-background-example-2.webp" id="1_kkl74"]
+[ext_resource type="FontFile" uid="uid://btopsxmg2ygtu" path="res://bg/FIGHTBACK.otf" id="2_josv0"]
+[ext_resource type="FontFile" uid="uid://drjgw5evtjbr8" path="res://bg/FIGHTBACK.ttf" id="2_vs1jv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s0vw2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1122.0
+offset_bottom = 591.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -2.0
+offset_right = 1278.0
+offset_bottom = 720.0
+texture = ExtResource("1_kkl74")
+
+[node name="Button2" type="Button" parent="TextureRect"]
+offset_left = 649.0
+offset_top = 237.0
+offset_right = 871.0
+offset_bottom = 312.0
+theme_override_fonts/font = ExtResource("2_josv0")
+theme_override_font_sizes/font_size = 60
+toggle_mode = true
+button_pressed = true
+keep_pressed_outside = true
+text = "START"
+
+[node name="Button3" type="Button" parent="TextureRect"]
+offset_left = 649.0
+offset_top = 333.0
+offset_right = 871.0
+offset_bottom = 408.0
+theme_override_fonts/font = ExtResource("2_josv0")
+theme_override_font_sizes/font_size = 60
+toggle_mode = true
+button_pressed = true
+keep_pressed_outside = true
+text = "OPTION"
+
+[node name="Button4" type="Button" parent="TextureRect"]
+offset_left = 649.0
+offset_top = 429.0
+offset_right = 871.0
+offset_bottom = 504.0
+theme_override_fonts/font = ExtResource("2_josv0")
+theme_override_font_sizes/font_size = 60
+toggle_mode = true
+button_pressed = true
+keep_pressed_outside = true
+text = "QUIT"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -326.0
+offset_top = 142.0
+offset_right = 1036.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(0.353225, 0.336866, 2.40654e-07, 1)
+theme_override_colors/font_shadow_color = Color(0.72549, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_vs1jv")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_s0vw2")
+text = "                                     REED THE DREAMER"
+horizontal_alignment = 1
+justification_flags = 171
+uppercase = true
